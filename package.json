@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://<USERNAME>.github.io/Weather_Watch",
+    "homepage": "https://Rayan-141.github.io/Weather_Watch",
     "scripts": {
         "dev": "vite",
         "build": "vite build",

@@ -16,7 +16,7 @@ app.use(express.json());
 const allowedOrigins = [
     'http://localhost:5173', // Vite Local
     'http://localhost:4173', // Vite Preview
-    'https://apple.github.io', // Your GitHub Pages
+    'https://Rayan-141.github.io', // Your GitHub Pages
     process.env.FRONTEND_URL // Render Environment Variable
 ];
 
