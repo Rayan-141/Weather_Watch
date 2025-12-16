@@ -1,0 +1,64 @@
+.clothing-suggestions-card {
+    margin-top: 20px;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    padding: 20px;
+    color: #000;
+    width: 100%;
+}
+
+.clothing-suggestions-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.suggestion-content {
+    background: transparent;
+    border-radius: 0.8rem;
+    padding: 0;
+}
+
+.suggestion-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+    /* Darker Gold color for heading */
+}
+
+.suggestion-content ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.suggestion-content li {
+    background: #ffffff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* transition: transform 0.2s; - Removed as per request */
+}
+
+/* Removed hover effect
+.suggestion-content li:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.25);
+}
+*/
+
+.extra-note {
+    margin-top: 1rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.5rem;
+}

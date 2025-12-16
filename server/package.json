@@ -1,0 +1,22 @@
+{
+    "name": "weather-watch-server",
+    "version": "1.0.0",
+    "description": "Backend for Weather Watch Application",
+    "main": "src/Server.js",
+    "scripts": {
+        "start": "node src/Server.js",
+        "dev": "nodemon src/Server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongoose": "^7.0.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "axios": "^1.3.4",
+        "jsonwebtoken": "^9.0.0",
+        "bcryptjs": "^2.4.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
+}

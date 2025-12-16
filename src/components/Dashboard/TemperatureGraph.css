@@ -1,0 +1,66 @@
+.temperature-graph {
+    width: 100%;
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    padding: 20px;
+    margin-top: 1.5rem;
+    color: #000;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.temperature-graph h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.graph-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.temp-curve {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.time-label {
+    fill: rgba(0, 0, 0, 0.6);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.point-temp-label {
+    fill: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.now-highlight {
+    fill: #d4af37;
+    /* Darker Gold/Amber */
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.now-highlight-time {
+    fill: #FFD700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
