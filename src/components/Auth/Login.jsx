@@ -10,14 +10,22 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5001/api/users/login", {
+            const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001/api";
+            const response = await fetch(`${API_URL}/users/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ email, password }),
             });
-            const data = await response.json();
+            let data;
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+                data = await response.json();
+            } else {
+                data = { msg: await response.text() };
+            }
+
             if (response.ok) {
                 console.log('Login successful, token:', data.token);
                 localStorage.setItem('token', data.token); // Save token

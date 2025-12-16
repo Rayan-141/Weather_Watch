@@ -25,6 +25,9 @@ exports.register = async (req, res) => {
         });
     } catch (err) {
         console.error(err.message);
+        if (err.code === 11000) {
+            return res.status(400).json({ msg: 'Username or Email already exists' });
+        }
         res.status(500).send('Server error');
     }
 };
