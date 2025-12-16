@@ -1,6 +1,6 @@
 # 🌤️ Weather Watch
 
-![Weather Watch Banner](https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=1000&auto=format&fit=crop)
+![Weather Watch Banner](./screenshots/weather_watch_preview.png)
 
 > **Weather Watch** is a full-stack web application that delivers live weather information, 21-Day forecasts, and real-time alerts. Built with the MERN stack, it provides a beautiful, glassmorphism-styled dashboard for monitoring weather conditions worldwide.
 
