@@ -40,6 +40,11 @@ app.use('/api/locations', require('./Routes/LocationRouter'));
 app.use('/api/alerts', require('./Routes/AlertRouter'));
 app.use('/api/weather', require('./Routes/WeatherRouter'));
 
+// Root Route for checking status
+app.get('/', (req, res) => {
+    res.send('Backend is Running and Live!');
+});
+
 const PORT = process.env.PORT || 5001;
 
 app.listen(PORT, () => {
